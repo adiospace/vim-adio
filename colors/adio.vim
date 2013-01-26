@@ -217,7 +217,7 @@ if &t_Co > 255
 	"Error - any erroneous construct
   hi Error             ctermfg=219  ctermbg=89   cterm=none
 
-	"*Todo - anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+	"Todo - anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   hi Todo              ctermfg=231  ctermbg=232  cterm=bold
 
 
