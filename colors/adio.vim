@@ -17,120 +17,76 @@ let g:colors_name="adio"
 
 if &t_Co > 255
 
-							"*hl-ColorColumn*
-"ColorColumn	used for the columns set with 'colorcolumn'
-							"*hl-Conceal*
-"Conceal		placeholder characters substituted for concealed
-		"text (see 'conceallevel')
-							"*hl-Cursor*
-"Cursor		the character under the cursor
-							"*hl-CursorIM*
-"CursorIM	like Cursor, but used when in IME mode |CursorIM|
-							"*hl-CursorColumn*
-"CursorColumn	the screen column that the cursor is in when 'cursorcolumn' is
-		"set
-							"*hl-CursorLine*
-"CursorLine	the screen line that the cursor is in when 'cursorline' is
-		"set
-							"*hl-Directory*
-"Directory	directory names (and other special names in listings)
-							"*hl-DiffAdd*
-"DiffAdd		diff mode: Added line |diff.txt|
-							"*hl-DiffChange*
-"DiffChange	diff mode: Changed line |diff.txt|
-							"*hl-DiffDelete*
-"DiffDelete	diff mode: Deleted line |diff.txt|
-							"*hl-DiffText*
-"DiffText	diff mode: Changed text within a changed line |diff.txt|
-							"*hl-ErrorMsg*
-"ErrorMsg	error messages on the command line
-							"*hl-VertSplit*
-"VertSplit	the column separating vertically split windows
-							"*hl-Folded*
-"Folded		line used for closed folds
-							"*hl-FoldColumn*
-"FoldColumn	'foldcolumn'
-							"*hl-SignColumn*
-"SignColumn	column where |signs| are displayed
-							"*hl-IncSearch*
-"IncSearch	'incsearch' highlighting; also used for the text replaced with
-		"":s///c"
-							"*hl-LineNr*
-"LineNr		Line number for ":number" and ":#" commands, and when 'number'
-		"or 'relativenumber' option is set.
-							"*hl-CursorLineNr*
-"CursorLineNr	Like LineNr when 'cursorline' is set for the cursor line.
-							"*hl-MatchParen*
-"MatchParen	The character under the cursor or just before it, if it
-		"is a paired bracket, and its match. |pi_paren.txt|
+"hl-Normal        - Normal text
+"hl-Visual        - Visual mode selection
+"hl-VisualNOS     - Visual mode selection when vim is "Not Owning the Selection". 
+"                   Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
+"hl-VertSplit     - the column separating vertically split windows
+"hl-MatchParen    - The character under the cursor or just before it, if it is a 
+"                   paired bracket, and its match. |pi_paren.txt|
+"hl-LineNr        - Line number for ":number" and ":#" commands, and when 'number'
+"                   or 'relativenumber' option is set.
 
-							"*hl-ModeMsg*
-"ModeMsg		'showmode' message (e.g., "-- INSERT --")
-							"*hl-MoreMsg*
-"MoreMsg		|more-prompt|
-							"*hl-NonText*
-"NonText		'~' and '@' at the end of the window, characters from
-		"'showbreak' and other characters that do not really exist in
-		"the text (e.g., ">" displayed when a double-wide character
-		"doesn't fit at the end of the line).
-							"*hl-Normal*
-"Normal		normal text
-							"*hl-Pmenu*
-"Pmenu		Popup menu: normal item.
-							"*hl-PmenuSel*
-"PmenuSel	Popup menu: selected item.
-							"*hl-PmenuSbar*
-"PmenuSbar	Popup menu: scrollbar.
-							"*hl-PmenuThumb*
-"PmenuThumb	Popup menu: Thumb of the scrollbar.
-							"*hl-Question*
-"Question	|hit-enter| prompt and yes/no questions
-							"*hl-Search*
-"Search		Last search pattern highlighting (see 'hlsearch').
-		"Also used for highlighting the current line in the quickfix
-		"window and similar items that need to stand out.
-							"*hl-SpecialKey*
-"SpecialKey	Meta and special keys listed with ":map", also for text used
-		"to show unprintable characters in the text, 'listchars'.
-		"Generally: text that is displayed differently from what it
-		"really is.
-							"*hl-SpellBad*
-"SpellBad	Word that is not recognized by the spellchecker. |spell|
-		"This will be combined with the highlighting used otherwise.
-							"*hl-SpellCap*
-"SpellCap	Word that should start with a capital. |spell|
-		"This will be combined with the highlighting used otherwise.
-							"*hl-SpellLocal*
-"SpellLocal	Word that is recognized by the spellchecker as one that is
-		"used in another region. |spell|
-		"This will be combined with the highlighting used otherwise.
-							"*hl-SpellRare*
-"SpellRare	Word that is recognized by the spellchecker as one that is
-		"hardly ever used. |spell|
-		"This will be combined with the highlighting used otherwise.
-							"*hl-StatusLine*
-"StatusLine	status line of current window
-							"*hl-StatusLineNC*
-"StatusLineNC	status lines of not-current windows
-		"Note: if this is equal to "StatusLine" Vim will use "^^^" in
-		"the status line of the current window.
-							"*hl-TabLine*
-"TabLine		tab pages line, not active tab page label
-							"*hl-TabLineFill*
-"TabLineFill	tab pages line, where there are no labels
-							"*hl-TabLineSel*
-"TabLineSel	tab pages line, active tab page label
-							"*hl-Title*
-"Title		titles for output from ":set all", ":autocmd" etc.
-							"*hl-Visual*
-"Visual		Visual mode selection
-							"*hl-VisualNOS*
-"VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
-		"Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
-							"*hl-WarningMsg*
-"WarningMsg	warning messages
-							"*hl-WildMenu*
-"WildMenu	current match in 'wildmenu' completion
+"hl-ColorColumn   - used for the columns set with 'colorcolumn'
+"l-Conceal        - placeholder characters substituted for concealed text (see 'conceallevel')
+"hl-Cursor        - the character under the cursor
+"hl-CursorIM      - like Cursor, but used when in IME mode |CursorIM|
+"hl-CursorColumn  - the screen column that the cursor is in when 'cursorcolumn' is set
+"hl-CursorLine    - the screen line that the cursor is in when 'cursorline' is set
+"hl-Directory     - directory names (and other special names in listings)
+"hl-DiffAdd       - diff mode: Added line |diff.txt|
+"hl-DiffChange    - diff mode: Changed line |diff.txt|
+"hl-DiffDelete    - diff mode: Deleted line |diff.txt|
+"hl-DiffText      - diff mode: Changed text within a changed line |diff.txt|
+"hl-ErrorMsg      - error messages on the command line
+"hl-Folded        - line used for closed folds
+"hl-FoldColumn    - 'foldcolumn'
+"hl-SignColumn    - column where |signs| are displayed
+"hl-IncSearch     - 'incsearch' highlighting; also used for the text replaced with ":s///c"
+"hl-CursorLineNr  - Like LineNr when 'cursorline' is set for the cursor line.
+"hl-ModeMsg       - 'showmode' message (e.g., "-- INSERT --")
+"hl-MoreMsg       - |more-prompt|
+"hl-NonText       - '~' and '@' at the end of the window, characters from 'showbreak' 
+"                   and other characters that do not really exist in the text 
+"                   (e.g., ">" displayed when a double-wide character doesn't fit
+"                   at the end of the line).
+ 
+"hl-Pmenu         - Popup menu: normal item.
+"hl-PmenuSel      - Popup menu: selected item.
+"hl-PmenuSbar     - Popup menu: scrollbar.
+"hl-PmenuThumb    - Popup menu: Thumb of the scrollbar.
+
+"hl-Question      - |hit-enter| prompt and yes/no questions
+"hl-Search        - Last search pattern highlighting (see 'hlsearch'). Also used for 
+"                   highlighting the current line in the quickfix window and similar
+"                   items that need to stand out.
+"hl-SpecialKey    - Meta and special keys listed with ":map", also for text used to
+"                   show unprintable characters in the text, 'listchars'. Generally
+"                   text that is displayed differently from what it really is.
+
+"hl-SpellBad      - Word that is not recognized by the spellchecker. |spell| This
+"                   will be combined with the highlighting used otherwise.
+"hl-SpellCap      - Word that should start with a capital. |spell| This will be
+"                   combined with the highlighting used otherwise.
+"hl-SpellLocal    - Word that is recognized by the spellchecker as one that is used
+"                   in another region. |spell| This will be combined with the
+"                   highlighting used otherwise.
+"hl-SpellRare     - Word that is recognized by the spellchecker as one that is hardly
+"                   ever used. |spell| This will be combined with the highlighting
+"                   used otherwise.
+
+"hl-StatusLine    - StatusLine	status line of current window
+"hl-StatusLineNC  - StatusLineNC	status lines of not-current windows. Note: if this
+"                   is equal to "StatusLine" Vim will use "^^^" in the status line
+"                   of the current window.
+
+"hl-TabLine       - tab pages line, not active tab page label
+"hl-TabLineFill   - tab pages line, where there are no labels
+"hl-TabLineSel    - tab pages line, active tab page label
+
+"hl-Title         - titles for output from ":set all", ":autocmd" etc.
+"hl-WarningMsg    - Warning messages
+"hl-WildMenu      - current match in 'wildmenu' completion
 
 
 
