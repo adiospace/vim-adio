@@ -139,11 +139,13 @@ if &t_Co > 255
 
 
  " always put Normal first - affects other colors
-  hi Normal          ctermfg=none ctermbg=234  cterm=none
-  hi Visual          ctermfg=none ctermbg=235  cterm=none
+  hi Normal          ctermfg=none ctermbg=233  cterm=none
 
   hi StatusLine      ctermfg=36   ctermbg=234  cterm=none
-  hi StatusLineNC    ctermfg=235  ctermbg=234  cterm=none
+  hi StatusLineNC    ctermfg=236  ctermbg=234  cterm=none
+  hi LineNr          ctermfg=236  ctermbg=233  cterm=none
+
+  hi Visual          ctermfg=none ctermbg=240  cterm=none
 
   hi SpecialKey      ctermfg=59   cterm=none   cterm=none
   hi IncSearch       ctermfg=193  ctermbg=16   cterm=none
@@ -153,7 +155,6 @@ if &t_Co > 255
   hi VertSplit       ctermfg=234  ctermbg=none cterm=none
   hi CursorColumn    ctermfg=none ctermbg=234  cterm=none
   hi ColorColumn     ctermfg=none ctermbg=234  cterm=none
-  hi LineNr          ctermfg=235  ctermbg=none cterm=none
   hi NonText         ctermfg=59   ctermbg=none cterm=none
   hi VisualNOS       ctermfg=none ctermbg=238  cterm=none
   hi WarningMsg      ctermfg=231  ctermbg=238  cterm=bold
