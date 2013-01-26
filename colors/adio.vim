@@ -191,7 +191,7 @@ if &t_Co > 255
 
 
 	" Comment	
-  hi Comment           ctermfg=234  ctermbg=none cterm=none
+  hi Comment           ctermfg=238  ctermbg=none cterm=none
 
   " Constants
   hi Constant          ctermfg=135  ctermbg=none cterm=bold
