@@ -15,19 +15,22 @@ if &t_Co > 255
 
   " Colors
   "
-  " Dark Gray (Background)  233
-  " LightGray1              234
-  " LightGray2              236
-  " LightGray3              246
-  " Green                   29
-  " Light Green             36
+  " Dark Gray (Background)    233
+  " Light Gray 1              234
+  " Light Gray 2              236
+  " Light Gray 3 (Comments)   242
+  " Light Gray 4              246
+  " Light Gray 5 (Foreground) 250 (or 252)
+  " White                     255
+  " Green                     29
+  " Light Green               36
 
   "
   " Theme (UI) Highlight
   "
 
   "hl-Normal         Normal text - always put Normal first - affects other colors
-  hi Normal          ctermfg=none ctermbg=233  cterm=none
+  hi Normal          ctermfg=252 ctermbg=233   cterm=none
   "hl-StatusLine     StatusLine	status line of current window
   hi StatusLine      ctermfg=29   ctermbg=234  cterm=none
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
