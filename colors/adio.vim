@@ -18,9 +18,10 @@ if &t_Co > 255
   " Dark Gray (Background)    233
   " Light Gray 1              234
   " Light Gray 2              236
-  " Light Gray 3 (Comments)   242
-  " Light Gray 4              246
-  " Light Gray 5 (Foreground) 250 (or 252)
+  " Light Gray 3              238
+  " Light Gray 4 (Comments)   242
+  " Light Gray 5              246
+  " Light Gray 6 (Foreground) 252
   " White                     255
   " Green                     29
   " Light Green               36
@@ -36,7 +37,7 @@ if &t_Co > 255
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
   "                  is equal to "StatusLine" Vim will use "^^^" in the status line
   "                  of the current window.
-  hi StatusLineNC    ctermfg=236  ctermbg=234  cterm=none
+  hi StatusLineNC    ctermfg=238  ctermbg=234  cterm=none
   "hl-VertSplit      the column separating vertically split windows
   hi VertSplit       ctermfg=234  ctermbg=none cterm=none
   "hl-MatchParen     The character under the cursor or just before it, if it is a 
