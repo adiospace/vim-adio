@@ -9,13 +9,18 @@ hi clear
 
 set background=dark
 
-set encoding=utf-8
-set fillchars=vert:\│
-
 let g:colors_name="adio"
 
-
 if &t_Co > 255
+
+  " Colors
+  "
+  " Dark Gray (Background)  233
+  " LightGray1              234
+  " LightGray2              236
+  " LightGray3              246
+  " Green                   29
+  " Light Green             36
 
   "
   " Theme (UI) Highlight
@@ -24,7 +29,7 @@ if &t_Co > 255
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=none ctermbg=233  cterm=none
   "hl-StatusLine     StatusLine	status line of current window
-  hi StatusLine      ctermfg=36   ctermbg=234  cterm=none
+  hi StatusLine      ctermfg=29   ctermbg=234  cterm=none
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
   "                  is equal to "StatusLine" Vim will use "^^^" in the status line
   "                  of the current window.
@@ -33,7 +38,7 @@ if &t_Co > 255
   hi VertSplit       ctermfg=234  ctermbg=none cterm=none
   "hl-MatchParen     The character under the cursor or just before it, if it is a 
   "                  paired bracket, and its match. |pi_paren.txt|
-  hi MatchParen      ctermfg=16   ctermbg=208  cterm=bold
+  hi MatchParen      ctermfg=29   ctermbg=none cterm=none
   "hl-LineNr         Line number for ":number" and ":#" commands, and when 'number'
   "                   or 'relativenumber' option is set.
   hi LineNr          ctermfg=236  ctermbg=233  cterm=none
@@ -42,7 +47,7 @@ if &t_Co > 255
   "l-Conceal         placeholder characters substituted for concealed text (see 'conceallevel')
   "hi Conceal        ctermfg=none ctermbg=none  cterm=none
   "hl-Cursor         the character under the cursor
-  hi Cursor          ctermfg=16   ctermbg=253  cterm=none
+  "hi Cursor         ctermfg=none ctermbg=none cterm=none
   "hl-CursorLine     the screen line that the cursor is in when 'cursorline' is set
   hi CursorLine      ctermfg=none ctermbg=none cterm=none
   "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
@@ -50,7 +55,7 @@ if &t_Co > 255
   "hl-CursorIM       like Cursor, but used when in IME mode |CursorIM|
   "hi CursorIM       ctermfg=none ctermbg=none  cterm=none
   "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
-  hi CursorLineNr    ctermfg=none ctermbg=234  cterm=none
+  hi CursorLineNr    ctermfg=246  ctermbg=236  cterm=none
   "hl-Directory      directory names (and other special names in listings)
   hi Directory       ctermfg=118  ctermbg=none cterm=bold
 
