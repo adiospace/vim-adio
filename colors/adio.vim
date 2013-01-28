@@ -111,9 +111,9 @@ if &t_Co > 255
   "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                  highlighting the current line in the quickfix window and similar
   "                  items that need to stand out.
-  hi Search          ctermfg=253  ctermbg=66   cterm=none
+  hi Search          ctermfg=253  ctermbg=235  cterm=none
   "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=193  ctermbg=16   cterm=none
+  hi IncSearch       ctermfg=253  ctermbg=29   cterm=none
   "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
   "                  show unprintable characters in the text, 'listchars'. Generally
   "                  text that is displayed differently from what it really is.
