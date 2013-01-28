@@ -13,22 +13,21 @@ let g:colors_name="adio"
 
 if &t_Co > 255
 
-  " Colors
   "
+  " Theme (UI) Highlight
+  "
+  " Green                      29
+  " Light Green                36
   " Dark Gray (Background)    233
   " Light Gray 1              234
   " Light Gray 2              236
   " Light Gray 3              238
   " Light Gray 4 (Comments)   242
-  " Light Gray 5              246
-  " Light Gray 6 (Foreground) 252
+  " Light Gray 5              244
+  " Light Gray 6              246
+  " Light Gray 7              248
+  " Light Gray 8 (Foreground) 252
   " White                     255
-  " Green                     29
-  " Light Green               36
-
-  "
-  " Theme (UI) Highlight
-  "
 
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=252 ctermbg=233   cterm=none
@@ -59,7 +58,7 @@ if &t_Co > 255
   "hl-CursorIM       like Cursor, but used when in IME mode |CursorIM|
   "hi CursorIM       ctermfg=none ctermbg=none  cterm=none
   "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
-  hi CursorLineNr    ctermfg=246  ctermbg=236  cterm=none
+  hi CursorLineNr    ctermfg=248  ctermbg=236  cterm=none
   "hl-Directory      directory names (and other special names in listings)
   hi Directory       ctermfg=118  ctermbg=none cterm=bold
 
@@ -92,10 +91,10 @@ if &t_Co > 255
   "                   at the end of the line).
   hi NonText         ctermfg=59   ctermbg=none cterm=none
   "hl-Visual         Visual mode selection
-  hi Visual          ctermfg=none ctermbg=240  cterm=none
+  hi Visual          ctermfg=none ctermbg=235  cterm=none
   "hl-VisualNOS      Visual mode selection when vim is "Not Owning the Selection". 
   "                  Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
-  hi VisualNOS       ctermfg=none ctermbg=238  cterm=none
+  "hi VisualNOS      ctermfg=none ctermbg=none cterm=none
 
   "hl-Pmenu          Popup menu: normal item.
   hi Pmenu           ctermfg=81   ctermbg=16   cterm=none
@@ -111,9 +110,9 @@ if &t_Co > 255
   "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                  highlighting the current line in the quickfix window and similar
   "                  items that need to stand out.
-  hi Search          ctermfg=253  ctermbg=235  cterm=none
+  hi Search          ctermfg=252  ctermbg=235  cterm=none 
   "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=253  ctermbg=29   cterm=none
+  hi IncSearch       ctermfg=252  ctermbg=29   cterm=none
   "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
   "                  show unprintable characters in the text, 'listchars'. Generally
   "                  text that is displayed differently from what it really is.
@@ -135,11 +134,11 @@ if &t_Co > 255
   "hi SpellRare      ctermfg=none ctermbg=none  cterm=none
   
   "hl-TabLine        tab pages line, not active tab page label
-  "hi TabLine        ctermfg=none ctermbg=none  cterm=none
+  hi TabLine         ctermfg=244  ctermbg=236  cterm=none
   "hl-TabLineFill    tab pages line, where there are no labels
-  "hi TabLineFill    ctermfg=none ctermbg=none  cterm=none
+  hi TabLineFill     ctermfg=none ctermbg=236  cterm=none
   "hl-TabLineSel     tab pages line, active tab page label
-  "hi TabLineSel     ctermfg=none ctermbg=none  cterm=none
+  hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
   
   "hl-Title          titles for output from ":set all", ":autocmd" etc.
   hi Title           ctermfg=166  ctermbg=none cterm=none
