@@ -152,7 +152,7 @@ if &t_Co > 255
   " Syntax Highlight
   "
 
-	" Comment	
+  " Comment	
   hi Comment           ctermfg=243  ctermbg=none cterm=none
 
   " Constants
@@ -163,69 +163,69 @@ if &t_Co > 255
     hi Boolean         ctermfg=135  ctermbg=none cterm=none
     hi Float           ctermfg=135  ctermbg=none cterm=none
 
-	" Identifier	- any variable name
+  " Identifier	- any variable name
   hi Identifier        ctermfg=208  ctermbg=none cterm=none
-	  "Function	(also: methods for classes)
+    "Function	(also: methods for classes)
     hi Function        ctermfg=118  ctermbg=none cterm=none
 
-	" Statement	
+  " Statement	
   hi Statement         ctermfg=161  ctermbg=none cterm=bold
-	  " if, then, else, endif, switch, etc.
+    " if, then, else, endif, switch, etc.
     hi Conditional     ctermfg=161  ctermbg=none cterm=bold
-	  " for, do, while, etc.
+    " for, do, while, etc.
     hi Repeat          ctermfg=161  ctermbg=none cterm=bold
-	  " case, default, etc.
+    " case, default, etc.
     hi Label           ctermfg=229  ctermbg=none cterm=none
-	  " "sizeof", "+", "*", etc.
+    " "sizeof", "+", "*", etc.
     hi Operator        ctermfg=161  ctermbg=none cterm=none
-	  " any other keyword
+    " any other keyword
     hi Keyword         ctermfg=161  ctermbg=none cterm=bold
-	  " try, catch, throw
+    " try, catch, throw
     hi Exception       ctermfg=118  ctermbg=none cterm=bold
 
-	" PreProc - generic Preprocessor
+  " PreProc - generic Preprocessor
   hi PreProc           ctermfg=118  ctermbg=none cterm=none
-	  " Include	preprocessor #include
-	  " nothing for include - inherits PreProc
-	  " preprocessor #define
+    " Include	preprocessor #include
+    " nothing for include - inherits PreProc
+    " preprocessor #define
     hi Define          ctermfg=81   ctermbg=none cterm=none
-	  " Macro - same as Define
+    " Macro - same as Define
     hi Macro           ctermfg=81   ctermbg=none cterm=none
-	  " preprocessor #if, #else, #endif, etc.
+    " preprocessor #if, #else, #endif, etc.
     hi PreCondit       ctermfg=118  ctermbg=none cterm=bold
 
-	" Type - int, long, char, etc.
+  " Type - int, long, char, etc.
   hi Type              ctermfg=81   ctermbg=none cterm=none
-	  " StorageClass	static, register, volatile, etc.
+    " StorageClass	static, register, volatile, etc.
     hi StorageClass    ctermfg=208  ctermbg=none cterm=none
-	  " Structure	struct, union, enum, etc.
+    " Structure	struct, union, enum, etc.
     hi Structure       ctermfg=81   ctermbg=none cterm=none
-	  " Typedef	A typedef
+    " Typedef	A typedef
     hi Typedef         ctermfg=81   ctermbg=none cterm=none
 
-	"Special - any special symbol
+  "Special - any special symbol
   hi Special           ctermfg=81   ctermbg=232  cterm=none
-	  " special things inside a comment
+    " special things inside a comment
     hi SpecialComment  ctermfg=245  ctermbg=none cterm=bold
-	  " SpecialChar	special character in a constant
+    " SpecialChar	special character in a constant
     hi SpecialChar     ctermfg=161  ctermbg=none cterm=bold
-	  " you can use CTRL-] on this
+    " you can use CTRL-] on this
     hi Tag             ctermfg=161  ctermbg=none cterm=none
-	  " character that needs attention
+    " character that needs attention
     hi Delimiter       ctermfg=241  ctermbg=none cterm=none
-	  " debugging statements
+    " debugging statements
     hi Debug           ctermfg=225  ctermbg=none cterm=bold
 
 	"Underlined	- text that stands out, HTML links
   hi Underlined        ctermfg=244  ctermbg=none cterm=underline
 
-	"Ignore - left blank, hidden  (hl-Ignore)
+  "Ignore - left blank, hidden  (hl-Ignore)
   hi Ignore            ctermfg=244  ctermbg=232  cterm=none
 
-	"Error - any erroneous construct
+  "Error - any erroneous construct
   hi Error             ctermfg=219  ctermbg=89   cterm=none
 
-	"Todo - anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+  "Todo - anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   hi Todo              ctermfg=231  ctermbg=232  cterm=bold
 
 
