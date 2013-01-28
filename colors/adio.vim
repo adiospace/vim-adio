@@ -216,7 +216,7 @@ if &t_Co > 255
     " debugging statements
     hi Debug           ctermfg=225  ctermbg=none cterm=bold
 
-	"Underlined	- text that stands out, HTML links
+  "Underlined	- text that stands out, HTML links
   hi Underlined        ctermfg=244  ctermbg=none cterm=underline
 
   "Ignore - left blank, hidden  (hl-Ignore)
