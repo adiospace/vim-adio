@@ -46,7 +46,7 @@ if &t_Co > 255
   "                   or 'relativenumber' option is set.
   hi LineNr          ctermfg=236  ctermbg=233  cterm=none
   "hl-ColorColumn    used for the columns set with 'colorcolumn'
-  hi ColorColumn     ctermfg=none ctermbg=234  cterm=none
+  hi ColorColumn     ctermfg=none ctermbg=232  cterm=none
   "l-Conceal         placeholder characters substituted for concealed text (see 'conceallevel')
   "hi Conceal        ctermfg=none ctermbg=none  cterm=none
   "hl-Cursor         the character under the cursor
@@ -64,15 +64,21 @@ if &t_Co > 255
 
   "hl-DiffAdd        diff mode: Added line |diff.txt|
   hi DiffAdd         ctermfg=none ctermbg=24   cterm=none
-  "hl-DiffChange     diff mode: Changed line |diff.txt|
   hi DiffChange      ctermfg=181  ctermbg=239  cterm=none
-  "hl-DiffDelete     diff mode: Deleted line |diff.txt|
   hi DiffDelete      ctermfg=162  ctermbg=53   cterm=none
-  "hl-DiffText       diff mode: Changed text within a changed line |diff.txt|
   hi DiffText        ctermfg=none ctermbg=102  cterm=bold
 
   "hl-ErrorMsg       error messages on the command line
-  hi ErrorMsg        ctermfg=199  ctermbg=16   cterm=bold
+  hi ErrorMsg        ctermfg=none ctermbg=none cterm=none
+  "hl-MoreMsg        |more-prompt|
+  hi MoreMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-WarningMsg     Warning messages
+  hi WarningMsg      ctermfg=none ctermbg=none cterm=none
+  "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
+  hi ModeMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-Question       |hit-enter| prompt and yes/no questions
+  hi Question        ctermfg=29 ctermbg=none cterm=none
+
   "hl-Folded         line used for closed folds
   "
   hi Folded          ctermfg=67   ctermbg=16   cterm=none
@@ -81,42 +87,34 @@ if &t_Co > 255
   "hl-SignColumn     column where |signs| are displayed
   hi SignColumn      ctermfg=118  ctermbg=235  cterm=none
 
-  "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
-  hi ModeMsg         ctermfg=229  ctermbg=none cterm=none
-  "hl-MoreMsg        |more-prompt|
-  hi MoreMsg         ctermfg=229  ctermbg=none cterm=none
-  "hl-NonText        '~' and '@' at the end of the window, characters from 'showbreak' 
-  "                   and other characters that do not really exist in the text 
-  "                   (e.g., ">" displayed when a double-wide character doesn't fit
-  "                   at the end of the line).
+  "hl-NonText        '~' and '@' at the end of the window, characters from 
+  "                  'showbreak' and other characters that do not really exist 
+  "                  in the text (e.g., ">" displayed when a double-wide
+  "                  character doesn't fit at the end of the line).
   hi NonText         ctermfg=59   ctermbg=none cterm=none
   "hl-Visual         Visual mode selection
   hi Visual          ctermfg=none ctermbg=235  cterm=none
-  "hl-VisualNOS      Visual mode selection when vim is "Not Owning the Selection". 
-  "                  Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
-  "hi VisualNOS      ctermfg=none ctermbg=none cterm=none
 
   "hl-Pmenu          Popup menu: normal item.
-  hi Pmenu           ctermfg=81   ctermbg=16   cterm=none
+  hi Pmenu           ctermfg=none ctermbg=none   cterm=none
   "hl-PmenuSel       Popup menu: selected item.
-  hi PmenuSel        ctermfg=none ctermbg=244  cterm=none
+  hi PmenuSel        ctermfg=none ctermbg=none  cterm=none
   "hl-PmenuSbar      Popup menu: scrollbar.
-  hi PmenuSbar       ctermfg=none ctermbg=232  cterm=none
+  hi PmenuSbar       ctermfg=none ctermbg=none  cterm=none
   "hl-PmenuThumb     Popup menu: Thumb of the scrollbar.
-  hi PmenuThumb      ctermfg=81   ctermbg=none cterm=none
+  hi PmenuThumb      ctermfg=none ctermbg=none cterm=none
 
-  "hl-Question       |hit-enter| prompt and yes/no questions
-  hi Question        ctermfg=81   ctermbg=none cterm=none
+
   "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                  highlighting the current line in the quickfix window and similar
   "                  items that need to stand out.
-  hi Search          ctermfg=252  ctermbg=235  cterm=none 
+  hi Search          ctermfg=none  ctermbg=none  cterm=none 
   "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=252  ctermbg=29   cterm=none
+  hi IncSearch       ctermfg=none  ctermbg=none  cterm=none
   "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
   "                  show unprintable characters in the text, 'listchars'. Generally
   "                  text that is displayed differently from what it really is.
-  hi SpecialKey      ctermfg=59   cterm=none   cterm=none
+  hi SpecialKey      ctermfg=61   cterm=none   cterm=none
   
   "hl-SpellBad       Word that is not recognized by the spellchecker. |spell| This
   "                  will be combined with the highlighting used otherwise.
@@ -141,15 +139,14 @@ if &t_Co > 255
   hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
   
   "hl-Title          titles for output from ":set all", ":autocmd" etc.
-  hi Title           ctermfg=166  ctermbg=none cterm=none
-  "hl-WarningMsg     Warning messages
-  hi WarningMsg      ctermfg=231  ctermbg=238  cterm=bold
+  hi Title           ctermfg=none ctermbg=none cterm=none
+
   "hl-WildMenu       current match in 'wildmenu' completion
-  hi WildMenu        ctermfg=81   ctermbg=16   cterm=none
+  hi WildMenu        ctermfg=none ctermbg=none cterm=none
 
 
   "
-  " Syntax Highlight
+  " Standard Syntax Highlight
   "
 
   " Comment
