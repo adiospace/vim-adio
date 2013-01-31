@@ -57,10 +57,6 @@ if &t_Co > 255
   hi CursorLine      ctermfg=none ctermbg=none cterm=none
   "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
   hi CursorColumn    ctermfg=none ctermbg=235  cterm=none
-  "hl-Cursor         the character under the cursor
-  "hi Cursor         ctermfg=none ctermbg=none cterm=none
-  "hl-Conceal        placeholder characters substituted for concealed text (see 'conceallevel')
-  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
 
   "hl-Directory      directory names (and other special names in listings)
   hi Directory       ctermfg=252  ctermbg=none cterm=bold
@@ -68,18 +64,21 @@ if &t_Co > 255
   "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                  highlighting the current line in the quickfix window and similar
   "                  items that need to stand out.
-  hi Search          ctermfg=none ctermbg=none cterm=none 
+  hi Search          ctermfg=255  ctermbg=235  cterm=none 
   "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=255  ctermbg=234  cterm=none
+  hi IncSearch       ctermfg=232  ctermbg=153  cterm=none
+
 
   "hl-ErrorMsg       error messages on the command line
-  hi ErrorMsg        ctermfg=none ctermbg=none cterm=none
-  "hl-MoreMsg        |more-prompt|
-  hi MoreMsg         ctermfg=none ctermbg=none cterm=none
+  hi ErrorMsg        ctermfg=246  ctermbg=none cterm=none
   "hl-WarningMsg     Warning messages
   hi WarningMsg      ctermfg=none ctermbg=none cterm=none
   "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
   hi ModeMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-MoreMsg        |more-prompt|
+  hi MoreMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-WildMenu       current match in 'wildmenu' completion
+  hi WildMenu        ctermfg=32   ctermbg=none cterm=none
   "hl-Question       |hit-enter| prompt and yes/no questions
   hi Question        ctermfg=none ctermbg=none cterm=none
 
@@ -94,10 +93,10 @@ if &t_Co > 255
   hi SpecialKey      ctermfg=235  cterm=none   cterm=none
 
   "hl-DiffAdd        diff mode: Added line |diff.txt|
-  hi DiffAdd         ctermfg=none ctermbg=24   cterm=none
-  hi DiffChange      ctermfg=181  ctermbg=239  cterm=none
-  hi DiffDelete      ctermfg=162  ctermbg=53   cterm=none
-  hi DiffText        ctermfg=none ctermbg=102  cterm=bold
+  hi DiffAdd         ctermfg=none ctermbg=none cterm=none
+  hi DiffChange      ctermfg=none ctermbg=none cterm=none
+  hi DiffDelete      ctermfg=none ctermbg=none cterm=none
+  hi DiffText        ctermfg=none ctermbg=none cterm=bold
 
   "hl-Folded         line used for closed folds
   "
@@ -116,7 +115,6 @@ if &t_Co > 255
   "hl-PmenuThumb     Popup menu: Thumb of the scrollbar.
   hi PmenuThumb      ctermfg=none ctermbg=none cterm=none
 
-
   "hl-TabLine        tab pages line, not active tab page label
   hi TabLine         ctermfg=244  ctermbg=236  cterm=none
   "hl-TabLineFill    tab pages line, where there are no labels
@@ -126,9 +124,6 @@ if &t_Co > 255
   
   "hl-Title          titles for output from ":set all", ":autocmd" etc.
   hi Title           ctermfg=none ctermbg=none cterm=none
-
-  "hl-WildMenu       current match in 'wildmenu' completion
-  hi WildMenu        ctermfg=32   ctermbg=232  cterm=none
 
   "hl-SpellBad       Word that is not recognized by the spellchecker. |spell| This
   "                  will be combined with the highlighting used otherwise.
@@ -144,6 +139,12 @@ if &t_Co > 255
   "                  ever used. |spell| This will be combined with the highlighting
   "                  used otherwise.
   "hi SpellRare      ctermfg=none ctermbg=none  cterm=none
+  
+  "hl-Cursor         the character under the cursor
+  "hi Cursor         ctermfg=none ctermbg=none cterm=none
+  "hl-Conceal        placeholder characters substituted for concealed text (see 'conceallevel')
+  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
+
   
 
 
