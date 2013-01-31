@@ -92,11 +92,11 @@ if &t_Co > 255
   "                  text that is displayed differently from what it really is.
   hi SpecialKey      ctermfg=235  cterm=none   cterm=none
 
-  "hl-DiffAdd        diff mode: Added line |diff.txt|
-  hi DiffAdd         ctermfg=none ctermbg=none cterm=none
-  hi DiffChange      ctermfg=none ctermbg=none cterm=none
-  hi DiffDelete      ctermfg=none ctermbg=none cterm=none
-  hi DiffText        ctermfg=none ctermbg=none cterm=bold
+  "hl-DiffText       diff mode
+  hi DiffText        ctermfg=116  ctermbg=232  cterm=none
+  hi DiffChange      ctermfg=235  ctermbg=248  cterm=none
+  hi DiffAdd         ctermfg=29   ctermbg=232  cterm=none
+  hi DiffDelete      ctermfg=88   ctermbg=232  cterm=none
 
   "hl-Folded         line used for closed folds
   "
