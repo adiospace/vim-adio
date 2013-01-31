@@ -52,9 +52,9 @@ if &t_Co > 255
   "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
   hi CursorLineNr    ctermfg=248  ctermbg=236  cterm=none
   "hl-ColorColumn    used for the columns set with 'colorcolumn'
-  hi ColorColumn     ctermfg=none ctermbg=232  cterm=none
+  hi ColorColumn     ctermfg=none ctermbg=none cterm=none
   "hl-CursorLine     the screen line that the cursor is in when 'cursorline' is set
-  hi CursorLine      ctermfg=none ctermbg=235  cterm=none
+  hi CursorLine      ctermfg=none ctermbg=none cterm=none
   "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
   hi CursorColumn    ctermfg=none ctermbg=235  cterm=none
   "hl-Cursor         the character under the cursor
