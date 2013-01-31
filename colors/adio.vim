@@ -108,11 +108,11 @@ if &t_Co > 255
   hi SignColumn      ctermfg=118  ctermbg=235  cterm=none
 
   "hl-Pmenu          Popup menu: normal item.
-  hi Pmenu           ctermfg=none ctermbg=none   cterm=none
+  hi Pmenu           ctermfg=none ctermbg=none cterm=none
   "hl-PmenuSel       Popup menu: selected item.
-  hi PmenuSel        ctermfg=none ctermbg=none  cterm=none
+  hi PmenuSel        ctermfg=none ctermbg=none cterm=none
   "hl-PmenuSbar      Popup menu: scrollbar.
-  hi PmenuSbar       ctermfg=none ctermbg=none  cterm=none
+  hi PmenuSbar       ctermfg=none ctermbg=none cterm=none
   "hl-PmenuThumb     Popup menu: Thumb of the scrollbar.
   hi PmenuThumb      ctermfg=none ctermbg=none cterm=none
 
@@ -128,7 +128,7 @@ if &t_Co > 255
   hi Title           ctermfg=none ctermbg=none cterm=none
 
   "hl-WildMenu       current match in 'wildmenu' completion
-  hi WildMenu        ctermfg=39 ctermbg=none cterm=none
+  hi WildMenu        ctermfg=32   ctermbg=232  cterm=none
 
   "hl-SpellBad       Word that is not recognized by the spellchecker. |spell| This
   "                  will be combined with the highlighting used otherwise.
