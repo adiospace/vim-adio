@@ -31,42 +31,46 @@ if &t_Co > 255
 
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=252 ctermbg=233   cterm=none
+  "hl-Visual         Visual mode selection
+  hi Visual          ctermfg=none ctermbg=235  cterm=none
+
   "hl-StatusLine     StatusLine	status line of current window
   hi StatusLine      ctermfg=252   ctermbg=234  cterm=none
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
   "                  is equal to "StatusLine" Vim will use "^^^" in the status line
   "                  of the current window.
   hi StatusLineNC    ctermfg=238  ctermbg=234  cterm=none
+
   "hl-VertSplit      the column separating vertically split windows
   hi VertSplit       ctermfg=234  ctermbg=none cterm=none
   "hl-MatchParen     The character under the cursor or just before it, if it is a 
   "                  paired bracket, and its match. |pi_paren.txt|
-  hi MatchParen      ctermfg=29   ctermbg=none cterm=none
+  hi MatchParen      ctermfg=32   ctermbg=none cterm=none
   "hl-LineNr         Line number for ":number" and ":#" commands, and when 'number'
   "                   or 'relativenumber' option is set.
   hi LineNr          ctermfg=236  ctermbg=233  cterm=none
-  "hl-ColorColumn    used for the columns set with 'colorcolumn'
-  hi ColorColumn     ctermfg=none ctermbg=232  cterm=none
-  "l-Conceal         placeholder characters substituted for concealed text (see 'conceallevel')
-  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
-  "hl-Cursor         the character under the cursor
-  "hi Cursor         ctermfg=none ctermbg=none cterm=none
-  "hl-CursorLine     the screen line that the cursor is in when 'cursorline' is set
-  hi CursorLine      ctermfg=none ctermbg=none cterm=none
-  "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
-  hi CursorColumn    ctermfg=none ctermbg=234  cterm=none
-  "hl-CursorIM       like Cursor, but used when in IME mode |CursorIM|
-  "hi CursorIM       ctermfg=none ctermbg=none  cterm=none
   "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
   hi CursorLineNr    ctermfg=248  ctermbg=236  cterm=none
+  "hl-ColorColumn    used for the columns set with 'colorcolumn'
+  hi ColorColumn     ctermfg=none ctermbg=232  cterm=none
+  "hl-CursorLine     the screen line that the cursor is in when 'cursorline' is set
+  hi CursorLine      ctermfg=none ctermbg=235  cterm=none
+  "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
+  hi CursorColumn    ctermfg=none ctermbg=235  cterm=none
+  "hl-Cursor         the character under the cursor
+  "hi Cursor         ctermfg=none ctermbg=none cterm=none
+  "hl-Conceal        placeholder characters substituted for concealed text (see 'conceallevel')
+  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
+
   "hl-Directory      directory names (and other special names in listings)
   hi Directory       ctermfg=252  ctermbg=none cterm=bold
 
-  "hl-DiffAdd        diff mode: Added line |diff.txt|
-  hi DiffAdd         ctermfg=none ctermbg=24   cterm=none
-  hi DiffChange      ctermfg=181  ctermbg=239  cterm=none
-  hi DiffDelete      ctermfg=162  ctermbg=53   cterm=none
-  hi DiffText        ctermfg=none ctermbg=102  cterm=bold
+  "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
+  "                  highlighting the current line in the quickfix window and similar
+  "                  items that need to stand out.
+  hi Search          ctermfg=none ctermbg=none cterm=none 
+  "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
+  hi IncSearch       ctermfg=255  ctermbg=234  cterm=none
 
   "hl-ErrorMsg       error messages on the command line
   hi ErrorMsg        ctermfg=none ctermbg=none cterm=none
@@ -77,7 +81,23 @@ if &t_Co > 255
   "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
   hi ModeMsg         ctermfg=none ctermbg=none cterm=none
   "hl-Question       |hit-enter| prompt and yes/no questions
-  hi Question        ctermfg=29 ctermbg=none cterm=none
+  hi Question        ctermfg=none ctermbg=none cterm=none
+
+  "hl-NonText        '~' and '@' at the end of the window, characters from 
+  "                  'showbreak' and other characters that do not really exist 
+  "                  in the text (e.g., ">" displayed when a double-wide
+  "                  character doesn't fit at the end of the line).
+  hi NonText         ctermfg=235  ctermbg=none cterm=none
+  "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
+  "                  show unprintable characters in the text, 'listchars'. Generally
+  "                  text that is displayed differently from what it really is.
+  hi SpecialKey      ctermfg=235  cterm=none   cterm=none
+
+  "hl-DiffAdd        diff mode: Added line |diff.txt|
+  hi DiffAdd         ctermfg=none ctermbg=24   cterm=none
+  hi DiffChange      ctermfg=181  ctermbg=239  cterm=none
+  hi DiffDelete      ctermfg=162  ctermbg=53   cterm=none
+  hi DiffText        ctermfg=none ctermbg=102  cterm=bold
 
   "hl-Folded         line used for closed folds
   "
@@ -86,14 +106,6 @@ if &t_Co > 255
   hi FoldColumn      ctermfg=67   ctermbg=16   cterm=none
   "hl-SignColumn     column where |signs| are displayed
   hi SignColumn      ctermfg=118  ctermbg=235  cterm=none
-
-  "hl-NonText        '~' and '@' at the end of the window, characters from 
-  "                  'showbreak' and other characters that do not really exist 
-  "                  in the text (e.g., ">" displayed when a double-wide
-  "                  character doesn't fit at the end of the line).
-  hi NonText         ctermfg=59   ctermbg=none cterm=none
-  "hl-Visual         Visual mode selection
-  hi Visual          ctermfg=none ctermbg=235  cterm=none
 
   "hl-Pmenu          Popup menu: normal item.
   hi Pmenu           ctermfg=none ctermbg=none   cterm=none
@@ -105,17 +117,19 @@ if &t_Co > 255
   hi PmenuThumb      ctermfg=none ctermbg=none cterm=none
 
 
-  "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
-  "                  highlighting the current line in the quickfix window and similar
-  "                  items that need to stand out.
-  hi Search          ctermfg=none  ctermbg=none  cterm=none 
-  "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=none  ctermbg=none  cterm=none
-  "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
-  "                  show unprintable characters in the text, 'listchars'. Generally
-  "                  text that is displayed differently from what it really is.
-  hi SpecialKey      ctermfg=61   cterm=none   cterm=none
+  "hl-TabLine        tab pages line, not active tab page label
+  hi TabLine         ctermfg=244  ctermbg=236  cterm=none
+  "hl-TabLineFill    tab pages line, where there are no labels
+  hi TabLineFill     ctermfg=none ctermbg=236  cterm=none
+  "hl-TabLineSel     tab pages line, active tab page label
+  hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
   
+  "hl-Title          titles for output from ":set all", ":autocmd" etc.
+  hi Title           ctermfg=none ctermbg=none cterm=none
+
+  "hl-WildMenu       current match in 'wildmenu' completion
+  hi WildMenu        ctermfg=39 ctermbg=none cterm=none
+
   "hl-SpellBad       Word that is not recognized by the spellchecker. |spell| This
   "                  will be combined with the highlighting used otherwise.
   "hi SpellCap       ctermfg=none ctermbg=none  cterm=none
@@ -131,18 +145,6 @@ if &t_Co > 255
   "                  used otherwise.
   "hi SpellRare      ctermfg=none ctermbg=none  cterm=none
   
-  "hl-TabLine        tab pages line, not active tab page label
-  hi TabLine         ctermfg=244  ctermbg=236  cterm=none
-  "hl-TabLineFill    tab pages line, where there are no labels
-  hi TabLineFill     ctermfg=none ctermbg=236  cterm=none
-  "hl-TabLineSel     tab pages line, active tab page label
-  hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
-  
-  "hl-Title          titles for output from ":set all", ":autocmd" etc.
-  hi Title           ctermfg=none ctermbg=none cterm=none
-
-  "hl-WildMenu       current match in 'wildmenu' completion
-  hi WildMenu        ctermfg=none ctermbg=none cterm=none
 
 
   "
