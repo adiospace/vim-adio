@@ -32,7 +32,7 @@ if &t_Co > 255
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=252 ctermbg=233   cterm=none
   "hl-StatusLine     StatusLine	status line of current window
-  hi StatusLine      ctermfg=29   ctermbg=234  cterm=none
+  hi StatusLine      ctermfg=252   ctermbg=234  cterm=none
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
   "                  is equal to "StatusLine" Vim will use "^^^" in the status line
   "                  of the current window.
@@ -225,5 +225,46 @@ if &t_Co > 255
   "anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   hi Todo              ctermfg=231  ctermbg=232  cterm=bold
 
+
+  "
+  " Custom Syntax Highlight
+  "
+
+  "
+  " HTML Highlighting
+  "
+  "htmlTag
+  "htmlTagName
+  "htmlArg
+  "htmlScriptTag
+
+  "
+  " JavaScript Highlighting
+  "
+  "javaScriptBraces
+  "javaScriptFunction
+  "javaScriptConditional
+  "javaScriptRepeat
+  "javaScriptNumber
+  "javaScriptMember
+
+  "
+  " Vim Highlighting
+  "
+  " hi vimCommand        ctermfg=39   ctermbg=none cterm=none
+
+  "
+  " Ruby Highlighting
+  "
+  "hi rubySymbol
+  "hi rubyConstant
+  "hi rubyAttribute
+  "hi rubyInclude
+  "hi rubyLocalVariableOrMethod
+  "hi rubyCurlyBlock
+  "hi rubyStringDelimiter
+  "hi rubyInterpolationDelimiter
+  "hi rubyConditional
+  "hi rubyRepeat
 
 end
