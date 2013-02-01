@@ -147,6 +147,31 @@ if &t_Co > 255
   hi NerdTreeDirSlash ctermfg=252  ctermbg=none cterm=none
   hi NerdTreeHelp     ctermfg=240  ctermbg=none cterm=none
 
+  "
+  " CtrlP
+  "
+  "
+  "the message when no match is found (Error)
+  "hi CtrlPNoEntries 
+  "the matched pattern (Identifier)
+  "hi CtrlPMatch
+  "the line prefix '>' in the match window
+  "hi CtrlPLinePre
+  "the prompt's base (Comment)
+  "hi CtrlPPrtBase
+  "the prompt's text (|hl-Normal|)
+  "hi CtrlPPrtText
+  "the prompt's cursor when moving over the text (Constant)
+  "hi CtrlPPrtCursor
+  "'file' or 'path', and the current mode (Character)
+  "hi CtrlPMode1 
+  "'prt' or 'win', 'regex', the working directory (|hl-LineNr|)
+  "hi CtrlPMode2 
+  "the scanning status (Function)
+  "hi CtrlPStats
+
+
+
 
   "
   " Standard Syntax Highlight
