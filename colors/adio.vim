@@ -16,18 +16,6 @@ if &t_Co > 255
   "
   " Theme (UI) Highlight
   "
-  " Green                      29
-  " Light Green                36
-  " Dark Gray (Background)    233
-  " Light Gray 1              234
-  " Light Gray 2              236
-  " Light Gray 3              238
-  " Light Gray 4 (Comments)   242
-  " Light Gray 5              244
-  " Light Gray 6              246
-  " Light Gray 7              248
-  " Light Gray 8 (Foreground) 252
-  " White                     255
 
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=252 ctermbg=233   cterm=none
@@ -146,6 +134,20 @@ if &t_Co > 255
   hi WarningMsg      ctermfg=231  ctermbg=238  cterm=bold
   "hl-WildMenu       current match in 'wildmenu' completion
   hi WildMenu        ctermfg=81   ctermbg=16   cterm=none
+
+
+  "
+  " Custom Plugins Highlight
+  "
+
+  "
+  " NerdTree
+  "
+  hi NerdTreeCWD      ctermfg=39   ctermbg=none cterm=none
+  hi NerdTreeFile     ctermfg=252  ctermbg=none cterm=none
+  hi NerdTreeDir      ctermfg=252  ctermbg=none cterm=none
+  hi NerdTreeDirSlash ctermfg=252  ctermbg=none cterm=none
+  hi NerdTreeHelp     ctermfg=240  ctermbg=none cterm=none
 
 
   "
