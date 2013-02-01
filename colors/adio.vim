@@ -19,48 +19,73 @@ if &t_Co > 255
 
   "hl-Normal         Normal text - always put Normal first - affects other colors
   hi Normal          ctermfg=252 ctermbg=233   cterm=none
+  "hl-Visual         Visual mode selection
+  hi Visual          ctermfg=none ctermbg=235  cterm=none
+
   "hl-StatusLine     StatusLine	status line of current window
-  hi StatusLine      ctermfg=29   ctermbg=234  cterm=none
+  hi StatusLine      ctermfg=252   ctermbg=234  cterm=none
   "hl-StatusLineNC   StatusLineNC	status lines of not-current windows. Note: if this
   "                  is equal to "StatusLine" Vim will use "^^^" in the status line
   "                  of the current window.
   hi StatusLineNC    ctermfg=238  ctermbg=234  cterm=none
+
   "hl-VertSplit      the column separating vertically split windows
   hi VertSplit       ctermfg=234  ctermbg=none cterm=none
   "hl-MatchParen     The character under the cursor or just before it, if it is a 
   "                  paired bracket, and its match. |pi_paren.txt|
-  hi MatchParen      ctermfg=29   ctermbg=none cterm=none
+  hi MatchParen      ctermfg=32   ctermbg=none cterm=none
   "hl-LineNr         Line number for ":number" and ":#" commands, and when 'number'
   "                   or 'relativenumber' option is set.
   hi LineNr          ctermfg=236  ctermbg=233  cterm=none
+  "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
+  hi CursorLineNr    ctermfg=248  ctermbg=236  cterm=none
   "hl-ColorColumn    used for the columns set with 'colorcolumn'
-  hi ColorColumn     ctermfg=none ctermbg=234  cterm=none
-  "l-Conceal         placeholder characters substituted for concealed text (see 'conceallevel')
-  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
-  "hl-Cursor         the character under the cursor
-  "hi Cursor         ctermfg=none ctermbg=none cterm=none
+  hi ColorColumn     ctermfg=none ctermbg=none cterm=none
   "hl-CursorLine     the screen line that the cursor is in when 'cursorline' is set
   hi CursorLine      ctermfg=none ctermbg=none cterm=none
   "hl-CursorColumn   the screen column that the cursor is in when 'cursorcolumn' is set
-  hi CursorColumn    ctermfg=none ctermbg=234  cterm=none
-  "hl-CursorIM       like Cursor, but used when in IME mode |CursorIM|
-  "hi CursorIM       ctermfg=none ctermbg=none  cterm=none
-  "hl-CursorLineNr   Like LineNr when 'cursorline' is set for the cursor line.
-  hi CursorLineNr    ctermfg=248  ctermbg=236  cterm=none
+  hi CursorColumn    ctermfg=none ctermbg=235  cterm=none
+
   "hl-Directory      directory names (and other special names in listings)
   hi Directory       ctermfg=252  ctermbg=none cterm=bold
 
-  "hl-DiffAdd        diff mode: Added line |diff.txt|
-  hi DiffAdd         ctermfg=none ctermbg=24   cterm=none
-  "hl-DiffChange     diff mode: Changed line |diff.txt|
-  hi DiffChange      ctermfg=181  ctermbg=239  cterm=none
-  "hl-DiffDelete     diff mode: Deleted line |diff.txt|
-  hi DiffDelete      ctermfg=162  ctermbg=53   cterm=none
-  "hl-DiffText       diff mode: Changed text within a changed line |diff.txt|
-  hi DiffText        ctermfg=none ctermbg=102  cterm=bold
+  "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
+  "                  highlighting the current line in the quickfix window and similar
+  "                  items that need to stand out.
+  hi Search          ctermfg=255  ctermbg=235  cterm=none 
+  "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
+  hi IncSearch       ctermfg=232  ctermbg=153  cterm=none
+
 
   "hl-ErrorMsg       error messages on the command line
-  hi ErrorMsg        ctermfg=199  ctermbg=16   cterm=bold
+  hi ErrorMsg        ctermfg=246  ctermbg=none cterm=none
+  "hl-WarningMsg     Warning messages
+  hi WarningMsg      ctermfg=none ctermbg=none cterm=none
+  "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
+  hi ModeMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-MoreMsg        |more-prompt|
+  hi MoreMsg         ctermfg=none ctermbg=none cterm=none
+  "hl-WildMenu       current match in 'wildmenu' completion
+  hi WildMenu        ctermfg=32   ctermbg=none cterm=none
+  "hl-Question       |hit-enter| prompt and yes/no questions
+  hi Question        ctermfg=none ctermbg=none cterm=none
+
+  "hl-NonText        '~' and '@' at the end of the window, characters from 
+  "                  'showbreak' and other characters that do not really exist 
+  "                  in the text (e.g., ">" displayed when a double-wide
+  "                  character doesn't fit at the end of the line).
+  hi NonText         ctermfg=235  ctermbg=none cterm=none
+  "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
+  "                  show unprintable characters in the text, 'listchars'. Generally
+  "                  text that is displayed differently from what it really is.
+  hi SpecialKey      ctermfg=235  cterm=none   cterm=none
+
+  "hl-DiffText       diff mode
+  hi DiffText        ctermfg=116  ctermbg=232  cterm=none
+  hi DiffChange      ctermfg=235  ctermbg=248  cterm=none
+  hi DiffAdd         ctermfg=29   ctermbg=232  cterm=none
+  hi DiffDelete      ctermfg=88   ctermbg=232  cterm=none
+
   "hl-Folded         line used for closed folds
   "
   hi Folded          ctermfg=67   ctermbg=16   cterm=none
@@ -69,43 +94,25 @@ if &t_Co > 255
   "hl-SignColumn     column where |signs| are displayed
   hi SignColumn      ctermfg=118  ctermbg=235  cterm=none
 
-  "hl-ModeMsg        'showmode' message (e.g., "-- INSERT --")
-  hi ModeMsg         ctermfg=229  ctermbg=none cterm=none
-  "hl-MoreMsg        |more-prompt|
-  hi MoreMsg         ctermfg=229  ctermbg=none cterm=none
-  "hl-NonText        '~' and '@' at the end of the window, characters from 'showbreak' 
-  "                   and other characters that do not really exist in the text 
-  "                   (e.g., ">" displayed when a double-wide character doesn't fit
-  "                   at the end of the line).
-  hi NonText         ctermfg=59   ctermbg=none cterm=none
-  "hl-Visual         Visual mode selection
-  hi Visual          ctermfg=none ctermbg=235  cterm=none
-  "hl-VisualNOS      Visual mode selection when vim is "Not Owning the Selection". 
-  "                  Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
-  "hi VisualNOS      ctermfg=none ctermbg=none cterm=none
-
   "hl-Pmenu          Popup menu: normal item.
-  hi Pmenu           ctermfg=81   ctermbg=16   cterm=none
+  hi Pmenu           ctermfg=none ctermbg=none cterm=none
   "hl-PmenuSel       Popup menu: selected item.
-  hi PmenuSel        ctermfg=none ctermbg=244  cterm=none
+  hi PmenuSel        ctermfg=none ctermbg=none cterm=none
   "hl-PmenuSbar      Popup menu: scrollbar.
-  hi PmenuSbar       ctermfg=none ctermbg=232  cterm=none
+  hi PmenuSbar       ctermfg=none ctermbg=none cterm=none
   "hl-PmenuThumb     Popup menu: Thumb of the scrollbar.
-  hi PmenuThumb      ctermfg=81   ctermbg=none cterm=none
+  hi PmenuThumb      ctermfg=none ctermbg=none cterm=none
 
-  "hl-Question       |hit-enter| prompt and yes/no questions
-  hi Question        ctermfg=81   ctermbg=none cterm=none
-  "hl-Search         Last search pattern highlighting (see 'hlsearch'). Also used for 
-  "                  highlighting the current line in the quickfix window and similar
-  "                  items that need to stand out.
-  hi Search          ctermfg=252  ctermbg=235  cterm=none 
-  "hl-IncSearch      'incsearch' highlighting; also used for the text replaced with ":s///c"
-  hi IncSearch       ctermfg=252  ctermbg=29   cterm=none
-  "hl-SpecialKey     Meta and special keys listed with ":map", also for text used to
-  "                  show unprintable characters in the text, 'listchars'. Generally
-  "                  text that is displayed differently from what it really is.
-  hi SpecialKey      ctermfg=59   cterm=none   cterm=none
+  "hl-TabLine        tab pages line, not active tab page label
+  hi TabLine         ctermfg=244  ctermbg=236  cterm=none
+  "hl-TabLineFill    tab pages line, where there are no labels
+  hi TabLineFill     ctermfg=none ctermbg=236  cterm=none
+  "hl-TabLineSel     tab pages line, active tab page label
+  hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
   
+  "hl-Title          titles for output from ":set all", ":autocmd" etc.
+  hi Title           ctermfg=none ctermbg=none cterm=none
+
   "hl-SpellBad       Word that is not recognized by the spellchecker. |spell| This
   "                  will be combined with the highlighting used otherwise.
   "hi SpellCap       ctermfg=none ctermbg=none  cterm=none
@@ -121,19 +128,10 @@ if &t_Co > 255
   "                  used otherwise.
   "hi SpellRare      ctermfg=none ctermbg=none  cterm=none
   
-  "hl-TabLine        tab pages line, not active tab page label
-  hi TabLine         ctermfg=244  ctermbg=236  cterm=none
-  "hl-TabLineFill    tab pages line, where there are no labels
-  hi TabLineFill     ctermfg=none ctermbg=236  cterm=none
-  "hl-TabLineSel     tab pages line, active tab page label
-  hi TabLineSel      ctermfg=252  ctermbg=233  cterm=none
-  
-  "hl-Title          titles for output from ":set all", ":autocmd" etc.
-  hi Title           ctermfg=166  ctermbg=none cterm=none
-  "hl-WarningMsg     Warning messages
-  hi WarningMsg      ctermfg=231  ctermbg=238  cterm=bold
-  "hl-WildMenu       current match in 'wildmenu' completion
-  hi WildMenu        ctermfg=81   ctermbg=16   cterm=none
+  "hl-Cursor         the character under the cursor
+  "hi Cursor         ctermfg=none ctermbg=none cterm=none
+  "hl-Conceal        placeholder characters substituted for concealed text (see 'conceallevel')
+  "hi Conceal        ctermfg=none ctermbg=none  cterm=none
 
 
   "
@@ -151,7 +149,7 @@ if &t_Co > 255
 
 
   "
-  " Syntax Highlight
+  " Standard Syntax Highlight
   "
 
   " Comment
@@ -231,4 +229,46 @@ if &t_Co > 255
   hi Todo              ctermfg=231  ctermbg=232  cterm=bold
 
 
+  "
+  " Custom Syntax Highlight
+  "
+
+  "
+  " HTML Highlighting
+  "
+  "htmlTag
+  "htmlTagName
+  "htmlArg
+  "htmlScriptTag
+
+  "
+  " JavaScript Highlighting
+  "
+  "javaScriptBraces
+  "javaScriptFunction
+  "javaScriptConditional
+  "javaScriptRepeat
+  "javaScriptNumber
+  "javaScriptMember
+
+  "
+  " Vim Highlighting
+  "
+  " hi vimCommand        ctermfg=39   ctermbg=none cterm=none
+
+  "
+  " Ruby Highlighting
+  "
+  "hi rubySymbol
+  "hi rubyConstant
+  "hi rubyAttribute
+  "hi rubyInclude
+  "hi rubyLocalVariableOrMethod
+  "hi rubyCurlyBlock
+  "hi rubyStringDelimiter
+  "hi rubyInterpolationDelimiter
+  "hi rubyConditional
+  "hi rubyRepeat
+
 end
+
