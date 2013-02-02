@@ -23,17 +23,13 @@ if &t_Co > 255
   hi Visual           ctermfg=none ctermbg=235  cterm=none
 
   "hl-StatusLine      StatusLine	status line of current window
-  hi StatusLine       ctermfg=252  ctermbg=234  cterm=none
+  hi StatusLine       ctermfg=252  ctermbg=233  cterm=none
   "hl-StatusLineNC    StatusLineNC	status lines of not-current windows. Note: if this
   "                   is equal to "StatusLine" Vim will use "^^^" in the status line
   "                   of the current window.
-  hi StatusLineNC     ctermfg=236  ctermbg=234  cterm=none
-
+  hi StatusLineNC     ctermfg=240  ctermbg=234  cterm=none
   "hl-VertSplit       the column separating vertically split windows
   hi VertSplit        ctermfg=234  ctermbg=none cterm=none
-  "hl-MatchParen      The character under the cursor or just before it, if it is a 
-  "                   paired bracket, and its match. |pi_paren.txt|
-  hi MatchParen       ctermfg=32   ctermbg=none cterm=none
   "hl-LineNr          Line number for ":number" and ":#" commands, and when 'number'
   "                    or 'relativenumber' option is set.
   hi LineNr           ctermfg=236  ctermbg=233  cterm=none
@@ -48,6 +44,10 @@ if &t_Co > 255
 
   "hl-Directory       directory names (and other special names in listings)
   hi Directory        ctermfg=252  ctermbg=none cterm=none
+
+  "hl-MatchParen      The character under the cursor or just before it, if it is a 
+  "                   paired bracket, and its match. |pi_paren.txt|
+  hi MatchParen       ctermfg=32   ctermbg=none cterm=none
 
   "hl-Search          Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                   highlighting the current line in the quickfix window and similar
@@ -106,7 +106,7 @@ if &t_Co > 255
   "hl-TabLine         tab pages line, not active tab page label
   hi TabLine          ctermfg=246  ctermbg=236  cterm=none
   "hl-TabLineFill     tab pages line, where there are no labels
-  hi TabLineFill      ctermfg=none ctermbg=236  cterm=none
+  hi TabLineFill      ctermfg=none ctermbg=234  cterm=none
   "hl-TabLineSel      tab pages line, active tab page label
   hi TabLineSel       ctermfg=252  ctermbg=233  cterm=none
   
