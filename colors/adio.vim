@@ -23,11 +23,11 @@ if &t_Co > 255
   hi Visual           ctermfg=none ctermbg=235  cterm=none
 
   "hl-StatusLine      StatusLine	status line of current window
-  hi StatusLine       ctermfg=250  ctermbg=234  cterm=none
+  hi StatusLine       ctermfg=252  ctermbg=234  cterm=none
   "hl-StatusLineNC    StatusLineNC	status lines of not-current windows. Note: if this
   "                   is equal to "StatusLine" Vim will use "^^^" in the status line
   "                   of the current window.
-  hi StatusLineNC     ctermfg=236  ctermbg=233  cterm=none
+  hi StatusLineNC     ctermfg=236  ctermbg=234  cterm=none
 
   "hl-VertSplit       the column separating vertically split windows
   hi VertSplit        ctermfg=234  ctermbg=none cterm=none
@@ -104,7 +104,7 @@ if &t_Co > 255
   hi PmenuThumb       ctermfg=none ctermbg=none cterm=none
 
   "hl-TabLine         tab pages line, not active tab page label
-  hi TabLine          ctermfg=244  ctermbg=236  cterm=none
+  hi TabLine          ctermfg=246  ctermbg=236  cterm=none
   "hl-TabLineFill     tab pages line, where there are no labels
   hi TabLineFill      ctermfg=none ctermbg=236  cterm=none
   "hl-TabLineSel      tab pages line, active tab page label

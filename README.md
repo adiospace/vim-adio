@@ -1,7 +1,5 @@
 #Adio
 
-*WORK IN PROGRESS*
-
 *Requires Vim 7.3 or greater*
 
 Adio is a dark colorscheme for Vim. Is made only for terminals supporting 256 colors so make sure you enable that before using it.
