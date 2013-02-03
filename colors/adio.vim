@@ -49,13 +49,32 @@ if &t_Co > 255
   "                   paired bracket, and its match. |pi_paren.txt|
   hi MatchParen       ctermfg=32   ctermbg=none cterm=none
 
+  "hl-TabLine         tab pages line, not active tab page label
+  hi TabLine          ctermfg=246  ctermbg=237  cterm=none
+  "hl-TabLineFill     tab pages line, where there are no labels
+  hi TabLineFill      ctermfg=none ctermbg=234  cterm=none
+  "hl-TabLineSel      tab pages line, active tab page label
+  hi TabLineSel       ctermfg=252  ctermbg=233  cterm=none
+  
+  "hl-Title           titles for output from ":set all", ":autocmd" etc.
+  hi Title            ctermfg=none ctermbg=none cterm=none
+
+  "hl-NonText         '~' and '@' at the end of the window, characters from 
+  "                   'showbreak' and other characters that do not really exist 
+  "                   in the text (e.g., ">" displayed when a double-wide
+  "                   character doesn't fit at the end of the line).
+  hi NonText          ctermfg=236  ctermbg=none cterm=none
+  "hl-SpecialKey      Meta and special keys listed with ":map", also for text used to
+  "                   show unprintable characters in the text, 'listchars'. Generally
+  "                   text that is displayed differently from what it really is.
+  hi SpecialKey       ctermfg=236  cterm=none   cterm=none
+
   "hl-Search          Last search pattern highlighting (see 'hlsearch'). Also used for 
   "                   highlighting the current line in the quickfix window and similar
   "                   items that need to stand out.
   hi Search           ctermfg=255  ctermbg=235  cterm=none 
   "hl-IncSearch       'incsearch' highlighting; also used for the text replaced with ":s///c"
   hi IncSearch        ctermfg=232  ctermbg=153  cterm=none
-
 
   "hl-ErrorMsg        error messages on the command line
   hi ErrorMsg         ctermfg=246  ctermbg=none cterm=none
@@ -69,16 +88,6 @@ if &t_Co > 255
   hi WildMenu         ctermfg=32   ctermbg=none cterm=none
   "hl-Question        |hit-enter| prompt and yes/no questions
   hi Question         ctermfg=none ctermbg=none cterm=none
-
-  "hl-NonText         '~' and '@' at the end of the window, characters from 
-  "                   'showbreak' and other characters that do not really exist 
-  "                   in the text (e.g., ">" displayed when a double-wide
-  "                   character doesn't fit at the end of the line).
-  hi NonText          ctermfg=235  ctermbg=none cterm=none
-  "hl-SpecialKey      Meta and special keys listed with ":map", also for text used to
-  "                   show unprintable characters in the text, 'listchars'. Generally
-  "                   text that is displayed differently from what it really is.
-  hi SpecialKey       ctermfg=235  cterm=none   cterm=none
 
   "hl-DiffText        diff mode
   hi DiffText         ctermfg=116  ctermbg=232  cterm=none
@@ -103,15 +112,6 @@ if &t_Co > 255
   "hl-PmenuThumb      Popup menu: Thumb of the scrollbar.
   hi PmenuThumb       ctermfg=none ctermbg=none cterm=none
 
-  "hl-TabLine         tab pages line, not active tab page label
-  hi TabLine          ctermfg=246  ctermbg=237  cterm=none
-  "hl-TabLineFill     tab pages line, where there are no labels
-  hi TabLineFill      ctermfg=none ctermbg=234  cterm=none
-  "hl-TabLineSel      tab pages line, active tab page label
-  hi TabLineSel       ctermfg=252  ctermbg=233  cterm=none
-  
-  "hl-Title           titles for output from ":set all", ":autocmd" etc.
-  hi Title            ctermfg=none ctermbg=none cterm=none
 
   "hl-SpellBad        Word that is not recognized by the spellchecker. |spell| This
   "                   will be combined with the highlighting used otherwise.
