@@ -23,7 +23,7 @@ if &t_Co > 255
   hi Visual           ctermfg=none ctermbg=235  cterm=none
 
   "hl-StatusLine      StatusLine	status line of current window
-  hi StatusLine       ctermfg=252  ctermbg=233  cterm=none
+  hi StatusLine       ctermfg=252  ctermbg=234  cterm=none
   "hl-StatusLineNC    StatusLineNC	status lines of not-current windows. Note: if this
   "                   is equal to "StatusLine" Vim will use "^^^" in the status line
   "                   of the current window.
