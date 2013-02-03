@@ -104,9 +104,9 @@ if &t_Co > 255
   hi PmenuThumb       ctermfg=none ctermbg=none cterm=none
 
   "hl-TabLine         tab pages line, not active tab page label
-  hi TabLine          ctermfg=246  ctermbg=236  cterm=none
+  hi TabLine          ctermfg=246  ctermbg=237  cterm=none
   "hl-TabLineFill     tab pages line, where there are no labels
-  hi TabLineFill      ctermfg=none ctermbg=234  cterm=none
+  hi TabLineFill      ctermfg=none ctermbg=235  cterm=none
   "hl-TabLineSel      tab pages line, active tab page label
   hi TabLineSel       ctermfg=252  ctermbg=233  cterm=none
   
