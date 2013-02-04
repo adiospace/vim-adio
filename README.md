@@ -5,7 +5,9 @@
 *Requires Vim 7.3 or greater*
 
 Adio is a dark colorscheme for Vim made only for terminals suporting 256 colors. Syntax highlighting is based on Monokai colorscheme. 
-Adio colorscheme is 1/3 part of [Adio theme](https://github.com/adrianolaru/adio-theme) for terminals, tmux and Vim.
+
+
+The colorscheme is 1/3 part of [Adio theme](https://github.com/adrianolaru/adio-theme) for terminals, tmux and Vim.
 
 ## Install
 
