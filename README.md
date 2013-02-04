@@ -4,7 +4,9 @@
 
 Adio is a dark colorscheme made only for terminals suporting 256 colors. Syntax highlighting is based on Monokai colorscheme.
 
-To make the Vertical Split Character look like a line, make sure you add this to your .vimrc file:
+## Configuration
+
+To make the Vertical Split Character look like a line, make sure you add this to your `.vimrc` file:
 
     set encoding=utf-8
     set fillchars=vert:\│
