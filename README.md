@@ -1,4 +1,4 @@
-#Adio
+# Adio
 
 *Requires Vim 7.3 or greater*
 
@@ -14,3 +14,12 @@ To enable the current line number highlighting, set the cursorline and number.
 
     set number
     set cursorline
+
+## Install
+
+You can easily install it using a plugin manager like Vundle or Pathogen.
+
+For example, if you have Vundle installed, you just declare the bundle you wish
+to install in your `.vimrc`, and then run `:BundleInstall` Vim command.
+
+    Bundle 'adrianolaru/vim-adio'
