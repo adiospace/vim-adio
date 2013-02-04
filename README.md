@@ -11,10 +11,11 @@ You can easily install it using a plugin manager like
 [Pathogen](https://github.com/tpope/vim-pathogen).
 
 For example, if you have Vundle installed, you just declare the bundle you wish
-to install in your `.vimrc`, and then run `:BundleInstall` Vim command.
+to install in your `.vimrc`
 
     Bundle 'adrianolaru/vim-adio'
 
+and then open Vim and run `:BundleInstall` command.
 
 ## Configuration
 
