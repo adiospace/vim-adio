@@ -2,7 +2,7 @@
 
 *Requires Vim 7.3 or greater*
 
-Adio is a dark colorscheme for Vim. Is made only for terminals supporting 256 colors. Syntax highlight is based on Monokai.
+Adio is a dark colorscheme for Vim. Is made only for terminals supporting 256 colors. Syntax highlighting is based on Monokai colorscheme.
 
 To make the Vertical Split Character look like a line, make sure you add this to your .vimrc file:
 
