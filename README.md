@@ -29,7 +29,6 @@ To make the Vertical Split Character look like a line, make sure you add this to
     set encoding=utf-8
     set fillchars=vert:\│
 
-
 To enable the current line number highlighting, set the cursorline and number.
 
     set number
