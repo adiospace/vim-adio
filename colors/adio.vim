@@ -97,7 +97,7 @@ if &t_Co > 255
 
   "hl-Folded          line used for closed folds
   "
-  hi Folded           ctermfg=67   ctermbg=16   cterm=none
+  hi Folded           ctermfg=67   ctermbg=none cterm=none
   "hl-FoldColumn      'foldcolumn'
   hi FoldColumn       ctermfg=67   ctermbg=16   cterm=none
   "hl-SignColumn      column where |signs| are displayed
